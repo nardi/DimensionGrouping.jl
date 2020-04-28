@@ -1,7 +1,7 @@
 module DimensionGrouping
 
 export dg_init_random, dg_energy, dg_train!
-DG = DimensionGrouping; export DG;
+DG = DimensionGrouping; export DG # Shorthand for package.
 
 include.(
     ["distances", "arrayutils", "convolution",
