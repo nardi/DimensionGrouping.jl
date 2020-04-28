@@ -4,7 +4,8 @@ export dg_init_random, dg_energy, dg_train!
 DG = DimensionGrouping; export DG;
 
 include.(
-    ["distances", "arrayutils", "convolution"]
+    ["distances", "arrayutils", "convolution",
+     "testutils"]
 .|> (f -> f * ".jl"))
 
 using Statistics, Distributions
